@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>form pendaftaran</title>
+    <script src="functionform.js"></script>
+    <link rel="stylesheet" href="styleformulir.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="container">
+        <h4 class="text-center">formulir pendaftaran</h4>
+        <br>
+        <h5 class="kembali"><a href="index.html">Home</a></h5>
+        <br>
+        <form action="" method="get">
+            <div class="mb-3 row">
+                <label for="nama" class="col-sm-2 col-form-label">nama</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="nama_mhs"
+                  placeholder="nama lengkap anda">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="email_mhs" class="col-sm-2 col-form-label">email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email_mhs" name="email_mhs"
+                  required
+                  placeholder="tulis email aktif anda">
+                </div>
+                <br>
+                <div class="mb-3 row" >
+                  <label for="tmpt_lahir" class="col-sm-2 col-form-label"> TEMPAT LAHIR </label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="tmpt_lahir" id="tmpt_lahir" placeholder="Tempat Lahir Anda">
+                  </div>
+                </div>
+
+                <div class="mb-3 row" >
+                  <label for="tgl_lahir" class="col-sm-2 col-form-label"> TANGGAL LAHIR </label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" name="tgl_lahir" id="tgl_lahir">
+                  </div>
+                </div>
+                <div class="mb-3 row" >
+                  <label for="alamat" class="col-sm-2 col-form-label"> ALAMAT </label>
+                  <div class="col-sm-10">
+
+                    <td>
+                      <textarea class="form-control" 
+                      name="alamat"id="alamat" cols="30" rows=5 
+                      placeholder ="Masukan Alamat Anda"minlength="5" maxlength="25" required></textarea  >
+                    </td>
+                  </div>
+                </div>
+              
+                <div class="mb-3 row">
+                    <label for="prodi" class="col-sm-2 col-form-label">upload foto</label>
+                
+                        <div class="col-sm-10"
+                        name = "prodi" id="prodi">
+                        <img src="images/profil kosong.jpg" id="upload_foto" alt="" height="150px" class="img-bdr">
+                        <input class="form" type="file" name="foto" id="foto" onchange="fileValidation()" required>
+                    </div>
+              <div class="mb-3 row">
+                <label for="jenis" class="col-sm-2 col-form-label">jenis kelamin</label>
+            
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          laki-laki
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          perempuan
+                        </label>
+                      </div>
+                     
+                </div>
+              <div class="mb-3 row">
+                <label for="jenis" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">kirim</button>
+                        <button type="reset" class="btn btn-secondary">reset</button>
+                </div>
+                
+              </div>
+        </form>
+        <br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+  <footer> 
+    <div class="copyright" align="center">
+        &copy; milenials cafe
+    </div>
+</footer>
+</html>
